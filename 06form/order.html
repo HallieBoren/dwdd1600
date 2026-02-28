@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hallie Boren">
+    <meta name="description" content="learn about Bloom Apparel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="traveler.css">
+    <title>Bloom Apparel: Home</title>
+</head>
+
+<body>
+    <!-- #start the page head -->
+    <header>
+        <span>Bloom Apparel</span>
+    </header>
+
+    <!-- #start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="dresses.html">Dresses</a></li>
+            <li class="active"><a href="order.html">Place an Order</a></li>
+
+        </ul>
+
+
+
+    </nav>
+
+    <!-- #start the main content -->
+    <main>
+        <h1>Place an Order</h1>
+        <form method="get" class="myForm" action="thanks.html">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="800-800-8000"></label>
+                <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Bloom Loyalty Status</legend>
+                <label><input type="radio" name="loyalty" value="silver"> Silver (2x points)</label>
+                <label><input type="radio" name="loyalty" value="gold"> Gold (5x points)</label>
+                <label><input type="radio" name="loyalty" value="platinum"> Platinum (10x points)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Alterations</legend>
+                <label><input type="checkbox" name="hemming" value="chosen"> Hemming</label>
+                <label><input type="checkbox" name="shorten straps" value="chosen"> Shorten Straps</label>
+                <label><input type="checkbox" name="add sleeves" value="chosen"> Add Sleeves</label>
+                <label><input type="checkbox" name="raise neckline" value="chosen"> Raise Neckline</label>
+
+                <label>Size
+                <select name="size">
+                <option value="none">Please Select</option>
+                <option value="00">00</option>
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                </select>
+                </label>
+            </fieldset>
+
+            <label> Special Requests
+<textarea name="special requests"></textarea>
+
+            </label>
+
+
+
+
+            <input type="submit" value="Place an Order">
+        </form>
+
+
+
+    </main>
+
+    <!-- #start the page footer -->
+    <footer>
+        <p>&copy; 2026 &bull; Hallie Boren &bull; Web Essentials</p>
+    </footer>
+</body>
+
+</html>
